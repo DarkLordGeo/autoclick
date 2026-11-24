@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AutoClick</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main>
+    <header>
+      <strong>AutoClick</strong>
+      <label class="switch">
+        <input id="enabled" type="checkbox">
+        <span></span>
+      </label>
+    </header>
+
+    <p id="site" class="muted">Checking current tab…</p>
+    <button id="choose" class="primary">Choose button on this page</button>
+
+    <section id="saved" hidden>
+      <div class="section-title">Saved default button</div>
+      <code id="selector"></code>
+      <button id="remove" class="secondary">Remove saved button</button>
+    </section>
+
+    <p id="status" class="status" role="status"></p>
+    <p class="hint">The selected button will be clicked once each time it appears on this website.</p>
+  </main>
+  <script src="popup.js"></script>
+</body>
+</html>
